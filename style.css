@@ -1,0 +1,166 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.quote-mashine-wrapper {
+  height: 100vh;
+  background-image: url('https://s9.postimg.org/h1ojn166n/aerial-area-big-5065.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.header {
+  padding-top: 3vh;
+  margin-bottom: 2vw;
+}
+
+
+.heading {
+  margin: 0;
+  font-family: 'Lobster', cursive;
+  font-size: 5vw;
+  text-align: center;
+  font-weight: normal;
+}
+
+.quote-wrapper {
+  box-sizing: border-box;
+  max-width: 780px;
+  width: 70%;
+  margin: 0 auto;
+  padding: 3vw 5vw;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.quote {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: 'Vollkorn', serif;
+  font-size: 6vw;
+  font-weight: 700;
+}
+
+.quote__text {
+  margin: 0;
+  line-height: 1.2;
+}
+
+.quote__source {
+  display: block;
+  margin-top: auto;
+  font-size: 3vw;
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.buttons {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin-top: 4vw;
+}
+
+.next-quote {
+}
+
+.share-tweet {
+  display: block;
+  text-decoration: none;
+  margin-left: 2.5%;
+  text-align: center;
+}
+
+.btn {
+  box-sizing: border-box;
+  font-family: inherit;
+  padding: 0.8vw;
+  width: 30%;
+  font-size: 1.8vw;
+  font-weight: bold;
+  border: none;
+  color: #ebe6ea;
+  background-color: #194644;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #435f5d;
+}
+
+@media (min-width: 1120px) {
+  .header {
+    margin-bottom: 22px;
+    padding-top: 17px;
+  }
+
+  .heading {
+    font-size: 56px;
+  }
+
+  .quote-wrapper {
+    padding: 36px 55px;
+  }
+
+  .quote {
+    font-size: 67px;
+  }
+
+  .quote__source {
+    font-size: 34px;
+  }
+
+  .buttons {
+    margin-top: 45px;
+  }
+
+  .btn {
+    padding: 9px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .quote-mashine-wrapper {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .header {
+    margin-bottom: 22px;
+    padding-top: 17px;
+  }
+
+  .heading {
+    font-size: 10vw;
+  }
+
+  .quote-wrapper {
+    width: 90%;
+    padding: 6%;
+    text-align: center;
+  }
+
+  .quote {
+    font-size: 40px;
+  }
+
+  .quote__source {
+    font-size: 20px;
+  }
+
+  .buttons {
+    margin-top: 20px;
+  }
+
+  .btn {
+    width: 48%;
+    padding: 9px;
+    font-size: 14px;
+  }
+}
