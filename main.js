@@ -91,6 +91,7 @@
   var startHeightQuoteWrapper = quoteWrapper.offsetHeight;
   var fontSize = Number(getComputedStyle(quoteContainer, null).getPropertyValue('font-size').slice(0, -2));
   var currentNumberQuote = 0;
+  var twitterLink = document.querySelector('.share-tweet');
 
   // усли текст не влезает в высоту блока - то уменьшает его знаяение
   function resizeText() {
@@ -119,7 +120,8 @@
     quoteContainer.textContent = DATA_QUOTE[quoteCount].quote;
     quoteSource.textContent = DATA_QUOTE[quoteCount].autor;
     resizeText();
-    document.querySelector('meta[name="description"]').setAttribute('content', DATA_QUOTE[quoteCount].quote +" " + DATA_QUOTE[quoteCount].autor);
+    twitterLink.setAttribute('href', 'https://twitter.com/intent/tweet?text=' +
+      DATA_QUOTE[quoteCount].quote + ' ' + DATA_QUOTE[quoteCount].autor);
   }
 
   buttonNext.addEventListener('click', onButtonNextClick);
