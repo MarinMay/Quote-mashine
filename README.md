@@ -2,7 +2,7 @@
 
 freeCodeCamp challenge
 
-https://marinmay.github.io/Quote-mashine/ 
+https://marina-vaganova.github.io/Quote-mashine/ 
 
 Генератор цитат. 
 Это задание с сайта freeCodeCamp. 
